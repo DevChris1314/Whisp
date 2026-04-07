@@ -1,0 +1,46 @@
+# =====================
+# Whisp Couples App
+# Xcode / Swift / SwiftUI
+# =====================
+
+# --- Xcode ---
+*.xcuserstate
+xcuserdata/
+*.xccheckout
+*.moved-aside
+DerivedData/
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# --- Build Output ---
+build/
+*.o
+*.d
+
+# --- CocoaPods (if you ever use it) ---
+Pods/
+Podfile.lock
+
+# --- Swift Package Manager ---
+.build/
+.swiftpm/
+
+# --- macOS Junk ---
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+
+# --- Secrets / API Keys ---
+*.env
+Secrets.swift
+GoogleService-Info.plist
+
+# --- Crash Logs ---
+*.crash
+
+# --- Playgrounds ---
+timeline.xctimeline
+playground.xcworkspace
