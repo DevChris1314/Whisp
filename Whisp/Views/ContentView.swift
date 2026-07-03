@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import FirebaseAuth
 
 struct ContentView: View {
     var body: some View {
@@ -19,7 +20,6 @@ struct ContentView: View {
                     Text("Couple's app for sending love taps, shared calendar and more")
                         .multilineTextAlignment(.center)
                         .padding(.bottom)
-                    
                     Button {
                     } label: {
                         Text("Continue")
