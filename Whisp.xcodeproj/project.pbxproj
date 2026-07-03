@@ -6,6 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		406C92942FF1EBF000EC9308 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 406C92932FF1EBF000EC9308 /* GoogleService-Info.plist */; };
+		406C92E62FF7412100EC9308 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 406C92E52FF7412100EC9308 /* FirebaseAuth */; };
+		406C92E82FF7412100EC9308 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 406C92E72FF7412100EC9308 /* FirebaseDatabase */; };
+		406C92EA2FF7412100EC9308 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 406C92E92FF7412100EC9308 /* FirebaseFunctions */; };
+		406C92EC2FF7412100EC9308 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 406C92EB2FF7412100EC9308 /* FirebaseMessaging */; };
+		406C92EE2FF7412100EC9308 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 406C92ED2FF7412100EC9308 /* FirebaseStorage */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		402BC6C22F81F6B60001BFB7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +36,7 @@
 		402BC6B42F81F6B50001BFB7 /* Whisp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Whisp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		402BC6C12F81F6B60001BFB7 /* WhispTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhispTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		402BC6CB2F81F6B60001BFB7 /* WhispUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhispUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		406C92932FF1EBF000EC9308 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +62,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				406C92EC2FF7412100EC9308 /* FirebaseMessaging in Frameworks */,
+				406C92EA2FF7412100EC9308 /* FirebaseFunctions in Frameworks */,
+				406C92E82FF7412100EC9308 /* FirebaseDatabase in Frameworks */,
+				406C92EE2FF7412100EC9308 /* FirebaseStorage in Frameworks */,
+				406C92E62FF7412100EC9308 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +94,7 @@
 				402BC6C42F81F6B60001BFB7 /* WhispTests */,
 				402BC6CE2F81F6B60001BFB7 /* WhispUITests */,
 				402BC6B52F81F6B50001BFB7 /* Products */,
+				406C92932FF1EBF000EC9308 /* GoogleService-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +128,11 @@
 			);
 			name = Whisp;
 			packageProductDependencies = (
+				406C92E52FF7412100EC9308 /* FirebaseAuth */,
+				406C92E72FF7412100EC9308 /* FirebaseDatabase */,
+				406C92E92FF7412100EC9308 /* FirebaseFunctions */,
+				406C92EB2FF7412100EC9308 /* FirebaseMessaging */,
+				406C92ED2FF7412100EC9308 /* FirebaseStorage */,
 			);
 			productName = Whisp;
 			productReference = 402BC6B42F81F6B50001BFB7 /* Whisp.app */;
@@ -195,6 +216,9 @@
 			);
 			mainGroup = 402BC6AB2F81F6B50001BFB7;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				406C92E42FF7412100EC9308 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 402BC6B52F81F6B50001BFB7 /* Products */;
 			projectDirPath = "";
@@ -212,6 +236,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				406C92942FF1EBF000EC9308 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -615,6 +640,45 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		406C92E42FF7412100EC9308 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.15.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		406C92E52FF7412100EC9308 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 406C92E42FF7412100EC9308 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		406C92E72FF7412100EC9308 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 406C92E42FF7412100EC9308 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		406C92E92FF7412100EC9308 /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 406C92E42FF7412100EC9308 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		406C92EB2FF7412100EC9308 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 406C92E42FF7412100EC9308 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		406C92ED2FF7412100EC9308 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 406C92E42FF7412100EC9308 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 402BC6AC2F81F6B50001BFB7 /* Project object */;
 }
